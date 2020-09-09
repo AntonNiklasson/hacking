@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tailwind.css</title>
-		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-	</head>
-	<body class="h-screen flex place-items-center bg-gray-100">
-		<main class="max-w-xl m-auto flex items-center bg-white border p-6 shadow-lg">
-			<img src="https://finhack.se/avatar.11c48092.png" class="h-48" />
-			<div>
-				<h1 class="text-lg font-bold">Hello. I'm Anton.</h1>
-				<h2>Let's build a digital product together.</h2>
-				<nav class="grid gap-2 grid-cols-2 mt-2">
-					<a href="https://tailwindcss.com" class="mr-2 text-blue-700">Homepage</a>
-					<a href="https://tailwindcss.com" class="mr-2 text-blue-700">Homepage</a>
-					<a href="https://tailwindcss.com" class="mr-2 text-blue-700">Homepage</a>
-					<a href="https://tailwindcss.com" class="mr-2 text-blue-700">Homepage</a>
-				</nav>
-			</div>
-		</main>
-	</body>
+  <head>
+    <title>Tailwind.css</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="h-screen flex place-items-center bg-gray-100">
+    <main class="max-w-xl m-auto flex items-center bg-white border rounded-sm p-6 shadow-md transition-all duration-200 hover:shadow-lg">
+      <img src="https://finhack.se/avatar.11c48092.png" class="h-48" />
+      <div>
+        <h1 class="text-lg font-bold">Hello. I'm Anton.</h1>
+        <h2>Let's build a digital product together.</h2>
+        <nav class="grid gap-2 grid-cols-2 mt-2">
+          <a href="https://tailwindcss.com" class="mr-2 text-blue-700 flex hover:text-blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            <span>Homepage</span>
+          </a>
+          <a href="https://tailwindcss.com" class="mr-2 text-blue-700 flex hover:text-blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://tailwindcss.com" class="mr-2 text-blue-700 flex hover:text-blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://tailwindcss.com" class="mr-2 text-blue-700 flex hover:text-blue-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 mr-1">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <span>Twitter</span>
+          </a>
+        </nav>
+      </div>
+    </main>
+  </body>
 </html>
