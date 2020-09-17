@@ -1,24 +1,48 @@
 <script>
-  import Editor from './Editor.svelte'
+  import Todos from './Todos.svelte'
 
-	let value = "lorem ipsum"
-	let count = 0;
-	
+  let todos = [
+    {
+      done: true,
+      label: 'Call mom'
+    },
+    {
+      done: false,
+      label: 'Buy milk'
+    },
+    {
+      done: false,
+      label: 'Pay'
+    }
+  ]
+  
 </script>
 
-<div class="editor-wrapper">
-  <Editor />
+<div class="wrapper">
+<Todos items={todos} />
 </div>
 
 <style>
-  :global(body) {
-    font: 16px helvetica, arial, sans-serif;
-    background: red;
+  :global(*) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .editor-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: papayawhip;
+  :global(body) {
+    --background: white;
+    --text: black;
+
+    font: 20px helvetica, arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    padding: 0;
+  }
+
+  .wrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 </style>
